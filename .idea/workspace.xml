@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/java/cn/coffeeandice/SecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/java/cn/coffeeandice/SecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="G:\个人学习\oauth2\spring-security\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="C:\Users\1\.m2\setting.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1tJxJ04XidpCDtLXflDd8H5y7gt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-2\src\main\resources" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-2\src\main\java" />
+      <recent name="G:\个人学习\oauth2\spring-security\spring-security-2" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-1\src\main\resources" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-1\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SecurityApplication (1)">
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.coffeeandice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-demo-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.coffeeandice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-demo-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.coffeeandice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SecurityApplication (1)" />
+        <item itemvalue="Spring Boot.SecurityApplication" />
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="" />
+      <created>1622500917728</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622500917728</updated>
+      <workItem from="1622500921588" duration="2739000" />
+      <workItem from="1622730393646" duration="1005000" />
+      <workItem from="1622769059910" duration="256000" />
+      <workItem from="1623283919720" duration="480000" />
+      <workItem from="1624201573155" duration="1201000" />
+      <workItem from="1624477786842" duration="4043000" />
+      <workItem from="1624485986645" duration="56000" />
+      <workItem from="1624486074591" duration="94000" />
+      <workItem from="1624486195306" duration="45000" />
+      <workItem from="1624486263336" duration="9370000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="826" y="221" key="#Project_Structure" timestamp="1624489802050">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="826" y="221" key="#Project_Structure/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624489802050" />
+    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser" timestamp="1624732657953">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624732657953" />
+    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1624735128140">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624735128140" />
+    <state x="777" y="299" key="FileChooserDialogImpl" timestamp="1624734846538">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="777" y="299" key="FileChooserDialogImpl/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734846538" />
+    <state width="1802" height="360" key="GridCell.Tab.0.bottom" timestamp="1624734983988">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.0.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
+    <state width="1802" height="360" key="GridCell.Tab.0.center" timestamp="1624734983988">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.0.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
+    <state width="1802" height="360" key="GridCell.Tab.0.left" timestamp="1624734983988">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.0.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
+    <state width="1802" height="360" key="GridCell.Tab.0.right" timestamp="1624734983988">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.0.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
+    <state width="1802" height="360" key="GridCell.Tab.1.bottom" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.1.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state width="1802" height="360" key="GridCell.Tab.1.center" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.1.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state width="1802" height="360" key="GridCell.Tab.1.left" timestamp="1624734983988">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.1.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
+    <state width="1802" height="360" key="GridCell.Tab.1.right" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.1.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state width="1802" height="360" key="GridCell.Tab.2.bottom" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.2.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state width="1802" height="360" key="GridCell.Tab.2.center" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.2.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state width="1802" height="360" key="GridCell.Tab.2.left" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state width="1802" height="360" key="GridCell.Tab.2.right" timestamp="1624734983989">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
+    <state x="500" y="186" key="SettingsEditor" timestamp="1624486304575">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624486304575" />
+    <state x="378" y="245" key="new project wizard" timestamp="1624487857655">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="378" y="245" key="new project wizard/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624487857655" />
+    <state x="654" y="250" key="run.anything.popup" timestamp="1624488349355">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="654" y="250" key="run.anything.popup/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624488349355" />
+    <state x="660" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1624487062869">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="660" y="235" width="672" height="678" key="search.everywhere.popup/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624487062869" />
+  </component>
+</project>
