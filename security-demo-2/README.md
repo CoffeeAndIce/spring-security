@@ -31,4 +31,17 @@
 
 ````
 
+
+#### 三、如何处理权限不足的问题？
+````java
+    ...
+    //上述配置中继续添加and()
+    and().exceptionHandling()
+       （1）可以通过 .accessDeniedHandler() 配置处理权限拒绝的问题
+             内部存在 HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AccessDeniedException e 可以处理
+       （2）可以通过 .accessDeniedPage()配置错误页面
+````
+ 
+
+
 [配置代码中权限相关解释](../README.md#ExpressionUrlAuthorizationConfigurer)

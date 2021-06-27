@@ -22,10 +22,10 @@
 
 `baseurl` : localhost:8080
 
-| name |  endpoint    | description     |
+| name |  description     |
 | :----: | :----: | :----: |
-|   [security-demo-1](./security-demo-1/README.md)   |   [{baseurl}/admin/demo](http://localhost:8080/test/demo)   |   `入门-基于内存配置用户角色`   |
-|   [security-demo-2](./security-demo-2/README.md)  |      |    `入门-基于内存接口权限控制`  |
+|   [security-demo-1](./security-demo-1/README.md)   |   `入门-基于内存配置用户角色`   |
+|   [security-demo-2](./security-demo-2/README.md)   |    `入门-基于内存接口权限控制`  |
 |      |      |      |
 
 
@@ -64,14 +64,24 @@
 
 
 
+
+
+
+
+
+
 ### 类全路径目录：
 
 ###### <span id="UserDetailsManagerConfigurer">1. UserDetailsManagerConfigurer</span>
 >`org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer`
 
 
+
+
 ###### <span id="SecurityExpressionRoot">2. SecurityExpressionRoot</span>
 >`org.springframework.security.access.expression.SecurityExpressionRoot`
 
+
+
 ###### <span id="ExpressionUrlAuthorizationConfigurer">3. ExpressionUrlAuthorizationConfigurer</span>
-org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer
+`org.springframework.security.config.annotation.web.configurers.ExpressionUrlAuthorizationConfigurer`
