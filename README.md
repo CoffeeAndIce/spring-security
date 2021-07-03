@@ -1,5 +1,3 @@
-[TOC]
-
 ### spring-security-review
 ![springboot](https://img.shields.io/badge/springboot-2.5.0.RELEASE-brightgreen.svg) ![jdk](https://img.shields.io/badge/jdk->=1.8-blue.svg) 
 
