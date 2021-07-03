@@ -45,3 +45,10 @@
 
 
 [配置代码中权限相关解释](../README.md#ExpressionUrlAuthorizationConfigurer)
+
+
+#### 四、自定义编码器
+> 整体是实现PasswordEncoder接口，根据自己的方式方法去实现自己的编码规则。
+> 例子中参照`NoOpPasswordEncoder` 做一个不编码的示例编码器
+
+[示例路径地址](./src/main/java/cn/coffeeandice/config/CustomePasswordEncoder.java)
