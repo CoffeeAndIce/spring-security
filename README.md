@@ -26,7 +26,7 @@
 | :--: | :--: |
 |   [security-demo-1](./security-demo-1/README.md)   |   `入门-基于内存配置用户角色`   |
 |   [security-demo-2](./security-demo-2/README.md)   |    `入门-基于内存接口权限控制`  |
-|      |      |      |
+| [security-demo-3](./security-demo-3/README.md) | `入门-基于Session一致性问题处理` |
 
 
 

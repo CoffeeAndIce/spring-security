@@ -7,7 +7,6 @@
     <modules>
         <module>security-demo-1</module>
         <module>security-demo-2</module>
-        <module>security-demo-3</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -31,6 +30,14 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
         </dependency>
     </dependencies>
 

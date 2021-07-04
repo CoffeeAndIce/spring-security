@@ -202,12 +202,13 @@
     <state x="777" y="299" key="FileChooserDialogImpl" timestamp="1624734846538">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="777" y="299" key="FileChooserDialogImpl/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734846538" />
-    <state width="1802" height="360" key="GridCell.Tab.0.bottom" timestamp="1624734983988">
+    <state x="750" y="366" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625422572798" />
+    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1625425003227">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.0.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
-    <state width="1802" height="360" key="GridCell.Tab.0.center" timestamp="1624734983988">
+    <state x="-1355" y="46" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625388283303" />
+    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625425003227" />
+    <state x="239" y="116" key="DiffContextDialog" timestamp="1625424936857">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state width="1802" height="360" key="GridCell.Tab.0.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
@@ -258,7 +259,43 @@
     <state x="378" y="245" key="new project wizard" timestamp="1624487857655">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="378" y="245" key="new project wizard/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624487857655" />
+    <state width="1802" height="360" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409492865" />
+    <state width="1142" height="308" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625424339127" />
+    <state width="1142" height="308" key="GridCell.Tab.2.right" timestamp="1625424339128">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="1802" height="360" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409492865" />
+    <state width="1142" height="308" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625424339128" />
+    <state x="527" y="199" key="Maven.ArtifactSearchDialog" timestamp="1625420800414">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="527" y="199" key="Maven.ArtifactSearchDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625420800414" />
+    <state x="717" y="255" key="RollbackChangesDialog" timestamp="1625423163336">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="717" y="255" key="RollbackChangesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625423163336" />
+    <state x="500" y="186" key="SettingsEditor" timestamp="1625422590692">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="-1420" y="93" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409761197" />
+    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625422590692" />
+    <state x="789" y="461" key="VCS.ChangelistChooser" timestamp="1625424954533">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="789" y="461" key="VCS.ChangelistChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625424954533" />
+    <state x="-1331" y="184" key="Vcs.Push.Dialog.v2" timestamp="1625389796127">
+      <screen x="-1845" y="-93" width="1845" height="1080" />
+    </state>
+    <state x="-1331" y="184" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625389796127" />
+    <state x="589" y="277" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625336106437" />
+    <state x="668" y="344" key="git4idea.merge.GitPullDialog" timestamp="1624836839318">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="668" y="344" key="git4idea.merge.GitPullDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624836839318" />
+    <state x="344" y="87" width="1002" height="852" key="new project wizard" timestamp="1625421951346">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="344" y="87" width="1002" height="852" key="new project wizard/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625421951346" />
     <state x="654" y="250" key="run.anything.popup" timestamp="1624488349355">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
