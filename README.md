@@ -1,8 +1,8 @@
 ### spring-security-review
 ![springboot](https://img.shields.io/badge/springboot-2.5.0.RELEASE-brightgreen.svg) ![jdk](https://img.shields.io/badge/jdk->=1.8-blue.svg) 
 
-
 `base dependence`
+
 ```xml
     <dependencies>
         <!-- 实现对 Spring MVC 的自动化配置 -->
@@ -24,9 +24,9 @@
 
 | name |  description     |
 | :--: | :--: |
-|   [security-demo-1](./security-demo-1/README.md)   |   `入门-基于内存配置用户角色`   |
-|   [security-demo-2](./security-demo-2/README.md)   |    `入门-基于内存接口权限控制`  |
-| [security-demo-3](./security-demo-3/README.md) | `入门-基于Session一致性问题处理` |
+|   [security-demo-1](./security-demo-1)   |   `入门-基于内存配置用户角色`   |
+|   [security-demo-2](./security-demo-2)   |    `入门-基于内存接口权限控制`  |
+| [security-demo-3](./security-demo-3) | `入门-基于Session一致性问题处理` |
 
 
 
