@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-1/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/java/cn/coffeeandice/SecurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-1/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/java/cn/coffeeandice/SecurityApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-2/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security.iml" afterDir="false" />
+    <list default="true" id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档">
+      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/SecurityApplication_Demo_3_MongoDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/config/SessionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/controller/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/SecurityApplication_Demo_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/SecurityApplication_Demo_3_Redis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/controller/SessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <list id="c2cd571d-f75a-4244-bcf7-cc17a13fb069" name="ignore" comment="">
+      <change afterPath="$PROJECT_DIR$/security-demo-3/security-demo-3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +143,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -176,7 +179,62 @@
       <workItem from="1624485986645" duration="56000" />
       <workItem from="1624486074591" duration="94000" />
       <workItem from="1624486195306" duration="45000" />
-      <workItem from="1624486263336" duration="9370000" />
+      <workItem from="1624486263336" duration="33405000" />
+      <workItem from="1625409524225" duration="534000" />
+      <workItem from="1625410083770" duration="1421000" />
+      <workItem from="1625411524344" duration="1523000" />
+      <workItem from="1625414637402" duration="5167000" />
+      <workItem from="1625419836462" duration="4191000" />
+      <workItem from="1625424057008" duration="13260000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化两种基础security运用形态">
+      <created>1624735150568</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624735150569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="初始化第三种基本类型">
+      <created>1624836663593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624836663593</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更改markdown格式">
+      <created>1624837028503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624837028503</updated>
+    </task>
+    <task id="LOCAL-00004" summary="调整样式">
+      <created>1624837093593</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624837093593</updated>
+    </task>
+    <task id="LOCAL-00005" summary="示例2：自定义编码器&#10;1、代码补充&#10;2、文档补充">
+      <created>1625336088056</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625336088056</updated>
+    </task>
+    <task id="LOCAL-00006" summary="一、修改启动类名称方便管理&#10;&#10;二、删除module-3 避免依赖累赘&#10;&#10;三、新增整合spring-session 与redis模块 demo-3">
+      <created>1625425083797</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625425083797</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新锚位置">
+      <created>1625425328308</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625425328308</updated>
     </task>
     <servers />
   </component>
@@ -185,6 +243,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始化两种基础security运用形态" />
+    <MESSAGE value="初始化第三种基本类型" />
+    <MESSAGE value="更改markdown格式" />
+    <MESSAGE value="调整样式" />
+    <MESSAGE value="示例2：自定义编码器&#10;1、代码补充&#10;2、文档补充" />
+    <MESSAGE value="一、修改启动类名称方便管理&#10;&#10;二、删除module-3 避免依赖累赘&#10;&#10;三、新增整合spring-session 与redis模块 demo-3" />
+    <MESSAGE value="更新锚位置" />
+    <MESSAGE value="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="221" key="#Project_Structure" timestamp="1624489802050">
@@ -203,11 +272,15 @@
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="750" y="366" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625422572798" />
-    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1625425003227">
+    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1625612349490">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="-1355" y="46" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625388283303" />
-    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625425003227" />
+    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625612349490" />
+    <state width="563" height="466" key="DebuggerActiveHint" timestamp="1625611649039">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state width="563" height="466" key="DebuggerActiveHint/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625611649039" />
     <state x="239" y="116" key="DiffContextDialog" timestamp="1625424936857">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
@@ -278,13 +351,13 @@
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="-1420" y="93" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409761197" />
-    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625422590692" />
-    <state x="789" y="461" key="VCS.ChangelistChooser" timestamp="1625424954533">
+    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625600730692" />
+    <state x="789" y="461" key="VCS.ChangelistChooser" timestamp="1625612252580">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="789" y="461" key="VCS.ChangelistChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625424954533" />
-    <state x="-1331" y="184" key="Vcs.Push.Dialog.v2" timestamp="1625389796127">
-      <screen x="-1845" y="-93" width="1845" height="1080" />
+    <state x="789" y="461" key="VCS.ChangelistChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625612252580" />
+    <state x="589" y="277" key="Vcs.Push.Dialog.v2" timestamp="1625425335122">
+      <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="-1331" y="184" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625389796127" />
     <state x="589" y="277" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625336106437" />

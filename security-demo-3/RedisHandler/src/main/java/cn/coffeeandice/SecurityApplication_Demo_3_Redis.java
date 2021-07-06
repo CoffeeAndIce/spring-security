@@ -2,7 +2,6 @@ package cn.coffeeandice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.session.data.redis.RedisFlushMode;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 /**
@@ -10,10 +9,10 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
  */
 @SpringBootApplication
 @EnableRedisHttpSession
-public class SecurityApplication_Demo_3 {
+public class SecurityApplication_Demo_3_Redis {
 
     public static void main(String[] args) {
-        SpringApplication.run(SecurityApplication_Demo_3.class, args);
+        SpringApplication.run(SecurityApplication_Demo_3_Redis.class, args);
     }
 
 }

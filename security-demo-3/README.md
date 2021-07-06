@@ -1,6 +1,10 @@
 ### 基于分布式session的接口权限控制 样例 
  [返回主文档](../README.md)
 
+**spring-session官方传送点**：[官方传送点](https://spring.io/projects/spring-session)
+
+
+
 #### 一、针对Session一致性问题处理方案
 
 ##### 1、Session定向转发
@@ -45,15 +49,19 @@
 
 
 #### 二、Spring-Session 与 Redis
-> 可以参考一下：[官方传送点](https://spring.io/projects/spring-session)
+> 官方整合示例文档参考：`https://spring.io/projects/spring-session-data-redis`
+>
+> 前提哦：需要一个`redis 2.8+` 以上的版本哦
 
 ##### 1、pom.xml新增依赖
 
 ```xml
+<!-- 实现对 Spring Session 使用 Redis 作为数据源的自动化配置 -->
 <dependency>
     <groupId>org.springframework.session</groupId>
     <artifactId>spring-session-data-redis</artifactId>
 </dependency>
+<!-- 自动化配置 Spring Data Redis -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -64,13 +72,11 @@
 
 ##### 2、@EnableRedisHttpSession
 
-> 启用配置，启用httpsession
+> 启用配置，启用httpsession，你可以任意摆放到可以被spring管理的地方
 
 
 
 ##### 3、yaml配置
-
-> 前提哦：需要一个`redis 2.8+` 以上的版本哦
 
 ```yaml
 spring:
@@ -88,13 +94,94 @@ spring:
 
 
 
-##### 4、触发测试
+#### 三、Spring-Session 与 MongoDB
 
-[设置key为coffeeandice 值为 handsome的value对到session内](http://localhost:8080/session/set?key=22&value=666)
+> 官方整合示例文档参考：`https://spring.io/projects/spring-session-data-mongodb`
 
-[测试获取已经设置的session值](http://localhost:8080/session/get_all)
+##### 1、pom.xml新增依赖
+
+```xml
+<!-- 实现对 Spring Session 使用 MongoDB 作为数据源的自动化配置 -->
+<dependency>
+    <groupId>org.springframework.session</groupId>
+    <artifactId>spring-session-data-mongodb</artifactId>
+</dependency>
+
+<!-- 自动化配置 Spring Data Mongodb -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-mongodb</artifactId>
+</dependency>
+```
 
 
 
-[示例路径地址](./src/main/java/cn/coffeeandice/controller/SessionController.java)
+##### 2、@EnableMongoHttpSession
+
+> 启用配置，启用httpsession，你可以任意摆放到可以被spring管理的地方
+
+
+
+##### 3、yaml配置
+
+```yaml
+spring:
+  data:
+    # MongoDB 配置项，对应 MongoProperties 类
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: admin # 可以通过db.stats()查看数据库
+      username: root
+      password: root # 建议纯英文，因为加上数字会识别不出
+      # 上述属性，也可以只配置 uri
+#      uri: mongodb://localhost/admin
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core: DEBUG # 打印 mongodb 操作的具体语句。生产环境下，不建议开启。
+
+```
+
+
+
+##### 4、新增配置类SessionConfiguration
+
+>使用默认的`JdkMongoSessionConverter`可读性很差的，参考之前文档`https://blog.csdn.net/CoffeeAndIce/article/details/91355024` 有异曲同工之处
+
+```java
+// 默认情况下
+@Bean
+public JdkMongoSessionConverter jdkMongoSessionConverter() {
+    return new JdkMongoSessionConverter(Duration.ofMinutes(30));
+}
+```
+
+
+
+> 为了可读性替换走起
+
+```java
+@Configuration
+public class SessionConfiguration {
+
+    @Bean
+    public AbstractMongoSessionConverter mongoSessionConverter() {
+        return new JacksonMongoSessionConverter();
+    }
+
+}
+```
+
+#### 四、触发测试
+
+|         name         |                         description                          |
+| :------------------: | :----------------------------------------------------------: |
+|        设置值        | [设置key为coffeeandice 值为 handsome的value对到session内](http://localhost:8080/session/set?key=22&value=666) |
+|        获取值        | [测试获取已经设置的session值](http://localhost:8080/session/get_all) |
+| 测试代码路径（一致） | [示例路径地址](./RedisHandler/src/main/java/cn/coffeeandice/controller/SessionController.java) |
 
