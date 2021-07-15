@@ -27,6 +27,7 @@
 |   [security-demo-1](./security-demo-1)   |   `入门-基于内存配置用户角色`   |
 |   [security-demo-2](./security-demo-2)   |    `入门-基于内存接口权限控制`  |
 | [security-demo-3](./security-demo-3) | `入门-基于Session一致性问题处理` |
+| [security-demo-4](./security-demo-4) | `基于Spring-security 5.X的oauth2样例 （内存模式）` |
 
 
 

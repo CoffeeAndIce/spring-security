@@ -52,3 +52,39 @@
 > 例子中参照`NoOpPasswordEncoder` 做一个不编码的示例编码器
 
 [示例路径地址](./src/main/java/cn/coffeeandice/config/CustomePasswordEncoder.java)
+
+
+##### 1、重新定义工厂类
+````java
+@Bean
+PasswordEncoder passwordEncoder(){
+    return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+}
+````
+
+````java
+//基于原有加密方法情况下加入自定义代码
+public class PasswordEncoderFactories {
+
+   public static PasswordEncoder createDelegatingPasswordEncoder() {
+      String encodingId = "bcrypt";
+      Map<String, PasswordEncoder> encoders = new HashMap<>();
+      encoders.put(encodingId, new BCryptPasswordEncoder());
+      encoders.put("ldap", new LdapShaPasswordEncoder());
+      encoders.put("MD4", new Md4PasswordEncoder());
+      encoders.put("MD5", new MessageDigestPasswordEncoder("MD5"));
+      encoders.put("noop", NoOpPasswordEncoder.getInstance());
+      encoders.put("pbkdf2", new Pbkdf2PasswordEncoder());
+      encoders.put("scrypt", new SCryptPasswordEncoder());
+      encoders.put("SHA-1", new MessageDigestPasswordEncoder("SHA-1"));
+      encoders.put("SHA-256", new MessageDigestPasswordEncoder("SHA-256"));
+      encoders.put("sha256", new StandardPasswordEncoder());
+
+
+      encoders.put("customer", CustomerPasswordEncoder());
+      return new DelegatingPasswordEncoder(encodingId, encoders);
+   }
+
+   private PasswordEncoderFactories() {}
+}
+````

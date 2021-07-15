@@ -6,22 +6,25 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>security-demo-1</artifactId>
+    <artifactId>security-demo-4-Resource</artifactId>
+    <properties>
+        <spring.boot.version>2.5.0</spring.boot.version>
+    </properties>
     <dependencies>
-        <!-- 实现对 Spring MVC 的自动化配置 -->
+        <!-- 实现对 Spring MVC 的自动配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
-        <!-- 实现对 Spring Security 的自动化配置 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <groupId>org.springframework.security.oauth.boot</groupId>
+            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+            <version>2.3.12.RELEASE</version>
         </dependency>
+
     </dependencies>
+
 </project>
