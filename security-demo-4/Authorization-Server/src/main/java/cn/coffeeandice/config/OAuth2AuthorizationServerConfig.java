@@ -11,6 +11,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.token.ConsumerTokenServices;
+import org.springframework.security.oauth2.provider.token.TokenStore;
 
 /**
  * @author : CoffeeAndIce
@@ -23,6 +24,8 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
 
 //    @Autowired
 //    private UserDetailsService userDetailsService;
+    @Autowired
+    private TokenStore tokenStore;
 
     /**
      * 用户认证管理器
@@ -33,6 +36,7 @@ public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigur
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints.authenticationManager(authenticationManager);
+        endpoints.tokenStore(tokenStore);
 //        endpoints.userDetailsService(userDetailsService);
     }
 

@@ -2,8 +2,10 @@ package cn.coffeeandice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.BeanIds;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -15,6 +17,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
  */
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
 
 //    @Override
 //    public UserDetailsService userDetailsServiceBean() throws Exception {
@@ -38,9 +41,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.
+        auth
                 // <A> 使用内存中的 InMemoryUserDetailsManager
-                        inMemoryAuthentication()
+                .inMemoryAuthentication()
                 // <B> 不使用 PasswordEncoder 密码编码器
                 .passwordEncoder(passwordEncoder())
                 // <C> 配置 admin 用户
@@ -52,11 +55,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .csrf().disable()
                 // <A> 配置请求地址的权限
                 .authorizeRequests()
-                .antMatchers("/test/demo").permitAll() // 所有用户可访问
-                .antMatchers("/test/admin").hasRole("ADMIN") // 需要 ADMIN 角色
-                .antMatchers("/test/normal").access("hasRole('ROLE_NORMAL')") // 需要 NORMAL 角色。
+                .antMatchers("/revoke/*").permitAll() // 所有用户可访问
+//                .antMatchers("/test/admin").hasRole("ADMIN") // 需要 ADMIN 角色
+//                .antMatchers("/test/normal").access("hasRole('ROLE_NORMAL')") // 需要 NORMAL 角色。
                 // 任何请求，访问的用户都需要经过认证
                 .anyRequest().authenticated()
                 .and()
@@ -69,5 +73,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout()
 //                    .logoutUrl("/logout") // 退出 URL 地址
                 .permitAll(); // 所有用户可访问
+
     }
 }

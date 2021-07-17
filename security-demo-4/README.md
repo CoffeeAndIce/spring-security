@@ -447,6 +447,77 @@ public boolean revokeToken(String tokenValue) {
 
 
 
+#### （1）授权管理器配置tokenStore
+
+> 虽然整体过程中会默认创建一个基于内存的令牌存储器，但是没有交给Spring管理，所以我们需要创建一个实体并在`cn.coffeeandice.config.OAuth2AuthorizationServerConfig`中配置到端点配置中
+
+```java
+//cn.coffeeandice.config.TokenConfig
+@Configuration
+public class TokenConfig {
+    @Bean
+    public TokenStore tokenService() {
+        return new InMemoryTokenStore();
+    }
+}
+```
+
+
+
+```java
+//cn.coffeeandice.config.OAuth2AuthorizationServerConfig
+public class OAuth2AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+···
+    @Autowired
+    private TokenStore tokenStore;
+    
+       @Override
+    public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+        ...
+        //设置到认证服务器的端点配置中
+        endpoints.tokenStore(tokenStore);
+		...
+    } 
+···    
+```
+
+
+
+#### （2）关闭csrf
+
+> 由于默认csrf中会禁止掉一般POST请求，当然也可以定制自己的 `org.springframework.security.web.util.matcher.RequestMatcher`
+>
+> 并在：`protected void configure(HttpSecurity http)`中配置
+
+
+
+#### （3）创建接口端点
+
+```java
+@RestController
+public class TokenController {
+    //等待自动注入即可
+    @Autowired
+    private InMemoryTokenStore tokenStore;
+
+    @PostMapping("/revoke/token")
+    public boolean revokeToken(@RequestParam("token") String tokenValue) {
+        OAuth2AccessToken accessToken = tokenStore.readAccessToken(tokenValue);
+        if (accessToken == null) {
+            return false;
+        }
+        if (accessToken.getRefreshToken() != null) {
+            tokenStore.removeRefreshToken(accessToken.getRefreshToken());
+        }
+        tokenStore.removeAccessToken(accessToken);
+        return true;
+    }
+
+}
+```
+
+
+
 ## 五、配置资源服务器
 
 > 整个资源管理器其实也是一个客户端把，可以想象成如下结构（四步流程）
