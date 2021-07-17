@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "3992e619-405e-43ab-850a-832d32970830",
+		"name": "Oauth2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "密码模式授权",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "123456",
+						"username": "clientapp"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username ",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "read_userinfo read_contacts",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "{{base_oauth}}/token"
+			},
+			"response": []
+		},
+		{
+			"name": "校验令牌有效性",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "123456",
+						"username": "clientapp"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "6pT3fMLyo6+784Z0nJtBD5tcXyY=",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_oauth}}/check_token"
+			},
+			"response": []
+		},
+		{
+			"name": "资源服务器测试",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": {
+						"tokenType": "bearer",
+						"accessToken": "iCN+c9N04kxMs3NOuD71OPU9tzE=",
+						"scope": "read_userinfo read_contacts",
+						"grant_type": "password_credentials",
+						"client_authentication": "header",
+						"password": "admin",
+						"username": "admin",
+						"clientSecret": "123456",
+						"clientId": "clientapp",
+						"accessTokenUrl": "http://127.0.0.1:8080/oauth/token",
+						"useBrowser": false,
+						"redirect_uri": "https://www.baidu.com",
+						"authUrl": "http://127.0.0.1:30000/oauth/authorize",
+						"addTokenTo": "header"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{base_resource}}/api/hello"
+			},
+			"response": []
+		},
+		{
+			"name": "登陆接口测试",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:9090/login"
+			},
+			"response": []
+		},
+		{
+			"name": "授权码模式授权-获取授权",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "123456",
+						"username": "clientapp"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "text"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://localhost:9090/test/callback",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "SlREF1",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "666",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "{{base_oauth}}/oauth/authorize",
+				"description": "跳转地址：\n\n{{base_oauth}}/authorize?client_id=clientapp&redirect_uri=http://localhost:9090/test/callback&response_type=code&scope=read_userinfo&state=666"
+			},
+			"response": []
+		},
+		{
+			"name": "客户端模式授权",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "通行令牌删除",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "123456",
+						"username": "clientapp"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "QCsLZBs+4bzWwhSy8rgZa+2PM2U=",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/revoke"
+			},
+			"response": []
+		}
+	]
+}
