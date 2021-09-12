@@ -1,42 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档">
-      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/SecurityApplication_Demo_3_MongoDb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/config/SessionConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/controller/SessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/SecurityApplication_Demo_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/src/main/java/cn/coffeeandice/SecurityApplication_Demo_3_Redis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/java/cn/coffeeandice/controller/SessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/java/cn/coffeeandice/controller/SessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo-3/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/src/main/resources/application.yaml" afterDir="false" />
+    <list default="true" id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/security-demo-3/MongoDBHandler/MongoDBHandler.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-3/RedisHandler/security-demo-3-RedisHandler.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/SecurityApplication_Demo_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/SpringSecurityConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxAuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxLogoutSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/entity/CustomerUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/entity/response/AsyAuthEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/entity/response/ResultResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/service/CustomerUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/service/RbacAuthorityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/utils/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security-demo-5/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo-2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo-2/README.md" afterDir="false" />
     </list>
     <list id="c2cd571d-f75a-4244-bcf7-cc17a13fb069" name="ignore" comment="">
       <change afterPath="$PROJECT_DIR$/security-demo-3/security-demo-3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-security.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="spring-security" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/main/" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -46,9 +68,20 @@
       </set>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/compiler.xml">
+      <ranges>
+        <range start1="8" end1="8" start2="8" end2="12" changelist="b98aff2c-c211-4ae3-ac9b-731af885e875" />
+        <range start1="10" end1="10" start2="14" end2="16" changelist="c2cd571d-f75a-4244-bcf7-cc17a13fb069" />
+        <range start1="16" end1="16" start2="22" end2="23" changelist="b98aff2c-c211-4ae3-ac9b-731af885e875" />
+        <range start1="18" end1="18" start2="25" end2="30" changelist="c2cd571d-f75a-4244-bcf7-cc17a13fb069" />
+      </ranges>
+    </file>
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
         <option name="userSettingsFile" value="C:\Users\1\.m2\setting.xml" />
       </MavenGeneralSettings>
     </option>
@@ -59,7 +92,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1tJxJ04XidpCDtLXflDd8H5y7gt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,70 +106,97 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/security-demo-5" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-4" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-4\Authorization-Server" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-3\RedisHandler" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\个人学习\oauth2\spring-security\security-demo-2\src\main\resources" />
-      <recent name="G:\个人学习\oauth2\spring-security\security-demo-2\src\main\java" />
-      <recent name="G:\个人学习\oauth2\spring-security\spring-security-2" />
-      <recent name="G:\个人学习\oauth2\spring-security\security-demo-1\src\main\resources" />
-      <recent name="G:\个人学习\oauth2\spring-security\security-demo-1\src\main\java" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-5" />
+      <recent name="G:\个人学习\oauth2\spring-security" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-4\Resource-Server" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-4\Authorization-Server" />
+      <recent name="G:\个人学习\oauth2\spring-security\security-demo-4" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.coffeeandice.config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.coffeeandice.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecurityApplication (1)">
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="spring-security" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SecurityApplication_Demo_5">
+    <configuration name="SecurityApplication_Demo_3_Redis" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="RedisHandler" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.coffeeandice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.Application" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication_Demo_3_Redis" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecurityApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="security-demo-2" />
+    <configuration name="SecurityApplication_Demo_4_Authorization" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="security-demo-4-Authorization" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication_Demo_4_Authorization" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityApplication_Demo_4_Resource" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="security-demo-4-Resource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication_Demo_4_Resource" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityApplication_Demo_5" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-demo-5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.coffeeandice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication_Demo_5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="security-demo-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.coffeeandice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.coffeeandice.SecurityApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SecurityApplication_Demo_4_Authorization" />
+      <item itemvalue="Spring Boot.SecurityApplication_Demo_4_Resource" />
+      <item itemvalue="Spring Boot.SecurityApplication_Demo_3_Redis" />
+      <item itemvalue="Spring Boot.SecurityApplication_Demo_5" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SecurityApplication (1)" />
-        <item itemvalue="Spring Boot.SecurityApplication" />
-        <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="Spring Boot.SecurityApplication_Demo_5" />
+        <item itemvalue="Spring Boot.SecurityApplication_Demo_3_Redis" />
       </list>
     </recent_temporary>
   </component>
@@ -142,11 +204,17 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.25549915" />
           <treeState>
             <expand>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -160,12 +228,16 @@
       </list>
     </option>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_PROPERTIES,SHOW_NON_PUBLIC" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b98aff2c-c211-4ae3-ac9b-731af885e875" name="Default Changelist" comment="" />
+      <changelist id="c2cd571d-f75a-4244-bcf7-cc17a13fb069" name="ignore" comment="" />
       <created>1622500917728</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -185,7 +257,17 @@
       <workItem from="1625411524344" duration="1523000" />
       <workItem from="1625414637402" duration="5167000" />
       <workItem from="1625419836462" duration="4191000" />
-      <workItem from="1625424057008" duration="13260000" />
+      <workItem from="1625424057008" duration="14549000" />
+      <workItem from="1625989952810" duration="3782000" />
+      <workItem from="1625994736327" duration="2665000" />
+      <workItem from="1625997801365" duration="11035000" />
+      <workItem from="1626013695901" duration="1584000" />
+      <workItem from="1626015302440" duration="6442000" />
+      <workItem from="1626180654958" duration="46698000" />
+      <workItem from="1627309644399" duration="6628000" />
+      <workItem from="1630251513697" duration="31017000" />
+      <workItem from="1630583514942" duration="19840000" />
+      <workItem from="1631355395157" duration="18997000" />
     </task>
     <task id="LOCAL-00001" summary="初始化两种基础security运用形态">
       <created>1624735150568</created>
@@ -236,6 +318,35 @@
       <option name="project" value="LOCAL" />
       <updated>1625425328308</updated>
     </task>
+    <task id="LOCAL-00008" summary="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档">
+      <created>1625612426680</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1625612426680</updated>
+    </task>
+    <task id="LOCAL-00009" summary="security-oauth2内存模式样例&#10;拆分为授权服务器与资源服务器说明">
+      <created>1626387139816</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1626387139816</updated>
+    </task>
+    <task id="LOCAL-00010" summary="security-oauth2内存模式样例&#10; 完善删除令牌方法">
+      <created>1626516315595</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626516315595</updated>
+    </task>
+    <task id="LOCAL-00011" summary="security-oauth2内存模式样例&#10;  相关postman v2.0版本脚本">
+      <created>1626530991046</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626530991046</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +354,19 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化两种基础security运用形态" />
@@ -253,118 +377,190 @@
     <MESSAGE value="一、修改启动类名称方便管理&#10;&#10;二、删除module-3 避免依赖累赘&#10;&#10;三、新增整合spring-session 与redis模块 demo-3" />
     <MESSAGE value="更新锚位置" />
     <MESSAGE value="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="security-demo-3 更新：&#10;更新分配模块&#10; 1、分为MongoDB 与 redis模块&#10; 2、更新说明文档，引入官方说明文档" />
+    <MESSAGE value="security-oauth2内存模式样例&#10;拆分为授权服务器与资源服务器说明" />
+    <MESSAGE value="security-oauth2内存模式样例&#10; 完善删除令牌方法" />
+    <MESSAGE value="security-oauth2内存模式样例&#10;  相关postman v2.0版本脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="security-oauth2内存模式样例&#10;  相关postman v2.0版本脚本" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="826" y="221" key="#Project_Structure" timestamp="1624489802050">
+    <state x="826" y="221" key="#Project_Structure" timestamp="1625411402792">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="826" y="221" key="#Project_Structure/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624489802050" />
-    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser" timestamp="1624732657953">
+    <state x="-1094" y="128" key="#Project_Structure/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409692162" />
+    <state x="826" y="221" key="#Project_Structure/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625411402792" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626381220538">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624732657953" />
-    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1624735128140">
+    <state x="-1506" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409287257" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626017873989" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626381220538" />
+    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser" timestamp="1627319505759">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624735128140" />
-    <state x="777" y="299" key="FileChooserDialogImpl" timestamp="1624734846538">
+    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626513378877" />
+    <state x="1039" y="269" key="#com.intellij.ide.util.MemberChooser/75.0.1845.1080@75.0.1845.1080" timestamp="1627319505759" />
+    <state x="689" y="311" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1626381195406">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="750" y="366" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625422572798" />
-    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1625612349490">
+    <state x="689" y="311" key="#com.intellij.ide.util.TreeClassChooserDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626381195406" />
+    <state x="624" y="233" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1625997861584">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="624" y="233" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625997861584" />
+    <state x="727" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626500523281">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="727" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626500523281" />
+    <state x="750" y="366" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1626014499890">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="750" y="366" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626014499890" />
+    <state x="565" y="139" key="CommitChangelistDialog2" timestamp="1631460855088">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="-1355" y="46" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625388283303" />
-    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625612349490" />
-    <state width="563" height="466" key="DebuggerActiveHint" timestamp="1625611649039">
+    <state x="565" y="139" key="CommitChangelistDialog2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460855088" />
+    <state x="565" y="139" key="CommitChangelistDialog2/75.0.1845.1080@75.0.1845.1080" timestamp="1626387137372" />
+    <state width="627" height="466" key="DebuggerActiveHint" timestamp="1631458665153">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="563" height="466" key="DebuggerActiveHint/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625611649039" />
-    <state x="239" y="116" key="DiffContextDialog" timestamp="1625424936857">
+    <state width="627" height="466" key="DebuggerActiveHint/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631458665153" />
+    <state width="563" height="466" key="DebuggerActiveHint/75.0.1845.1080@75.0.1845.1080" timestamp="1626382015201" />
+    <state x="239" y="116" key="DiffContextDialog" timestamp="1631460747550">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.0.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
-    <state width="1802" height="360" key="GridCell.Tab.0.left" timestamp="1624734983988">
+    <state x="-1681" y="23" key="DiffContextDialog/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625388281770" />
+    <state x="239" y="116" key="DiffContextDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460747550" />
+    <state x="777" y="299" key="FileChooserDialogImpl" timestamp="1627692141782">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.0.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
-    <state width="1802" height="360" key="GridCell.Tab.0.right" timestamp="1624734983988">
+    <state x="777" y="299" key="FileChooserDialogImpl/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1627692141782" />
+    <state width="1100" height="283" key="GridCell.Tab.0.bottom" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.0.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
-    <state width="1802" height="360" key="GridCell.Tab.1.bottom" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.0.bottom/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600533" />
+    <state width="1100" height="283" key="GridCell.Tab.0.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.0.bottom/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422671" />
+    <state width="1100" height="283" key="GridCell.Tab.0.center" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.1.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state width="1802" height="360" key="GridCell.Tab.1.center" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.0.center/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600531" />
+    <state width="1100" height="283" key="GridCell.Tab.0.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.0.center/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422671" />
+    <state width="1100" height="283" key="GridCell.Tab.0.left" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.1.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state width="1802" height="360" key="GridCell.Tab.1.left" timestamp="1624734983988">
+    <state width="1588" height="292" key="GridCell.Tab.0.left/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600530" />
+    <state width="1100" height="283" key="GridCell.Tab.0.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.0.left/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422671" />
+    <state width="1100" height="283" key="GridCell.Tab.0.right" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.1.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983988" />
-    <state width="1802" height="360" key="GridCell.Tab.1.right" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.0.right/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600531" />
+    <state width="1100" height="283" key="GridCell.Tab.0.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.0.right/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422671" />
+    <state width="1100" height="283" key="GridCell.Tab.1.bottom" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.1.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state width="1802" height="360" key="GridCell.Tab.2.bottom" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.1.bottom/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600534" />
+    <state width="1100" height="283" key="GridCell.Tab.1.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.1.bottom/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.1.center" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.2.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state width="1802" height="360" key="GridCell.Tab.2.center" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.1.center/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600533" />
+    <state width="1100" height="283" key="GridCell.Tab.1.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.1.center/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.1.left" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.2.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state width="1802" height="360" key="GridCell.Tab.2.left" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.1.left/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600533" />
+    <state width="1100" height="283" key="GridCell.Tab.1.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.1.left/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.1.right" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state width="1802" height="360" key="GridCell.Tab.2.right" timestamp="1624734983989">
+    <state width="1588" height="292" key="GridCell.Tab.1.right/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409600533" />
+    <state width="1100" height="283" key="GridCell.Tab.1.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.1.right/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.2.bottom" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state width="1802" height="360" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624734983989" />
-    <state x="500" y="186" key="SettingsEditor" timestamp="1624486304575">
+    <state width="1802" height="360" key="GridCell.Tab.2.bottom/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409492865" />
+    <state width="1100" height="283" key="GridCell.Tab.2.bottom/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.2.bottom/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.2.center" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624486304575" />
-    <state x="378" y="245" key="new project wizard" timestamp="1624487857655">
+    <state width="1802" height="360" key="GridCell.Tab.2.center/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409492865" />
+    <state width="1100" height="283" key="GridCell.Tab.2.center/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.2.center/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.2.left" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state width="1802" height="360" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409492865" />
-    <state width="1142" height="308" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625424339127" />
-    <state width="1142" height="308" key="GridCell.Tab.2.right" timestamp="1625424339128">
+    <state width="1100" height="283" key="GridCell.Tab.2.left/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.2.left/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state width="1100" height="283" key="GridCell.Tab.2.right" timestamp="1631460858796">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state width="1802" height="360" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409492865" />
-    <state width="1142" height="308" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625424339128" />
-    <state x="527" y="199" key="Maven.ArtifactSearchDialog" timestamp="1625420800414">
+    <state width="1100" height="283" key="GridCell.Tab.2.right/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1631460858796" />
+    <state width="1319" height="270" key="GridCell.Tab.2.right/75.0.1845.1080@75.0.1845.1080" timestamp="1626915422672" />
+    <state x="527" y="199" key="Maven.ArtifactSearchDialog" timestamp="1626500386382">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="527" y="199" key="Maven.ArtifactSearchDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625420800414" />
-    <state x="717" y="255" key="RollbackChangesDialog" timestamp="1625423163336">
+    <state x="527" y="199" key="Maven.ArtifactSearchDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626500386382" />
+    <state x="649" y="246" key="NewModule_or_Project.wizard" timestamp="1627692144694">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="717" y="255" key="RollbackChangesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625423163336" />
-    <state x="500" y="186" key="SettingsEditor" timestamp="1625422590692">
+    <state x="649" y="246" key="NewModule_or_Project.wizard/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1627692144694" />
+    <state x="717" y="255" key="RollbackChangesDialog" timestamp="1626493179242">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="717" y="255" key="RollbackChangesDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626493179242" />
+    <state x="717" y="255" key="RollbackChangesDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626378268936" />
+    <state x="500" y="186" key="SettingsEditor" timestamp="1626534796681">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="-1420" y="93" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625409761197" />
-    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625600730692" />
-    <state x="789" y="461" key="VCS.ChangelistChooser" timestamp="1625612252580">
+    <state x="500" y="186" key="SettingsEditor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626534796681" />
+    <state x="534" y="248" key="VCS.ChangeListViewerDialog" timestamp="1626377281391">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="789" y="461" key="VCS.ChangelistChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625612252580" />
-    <state x="589" y="277" key="Vcs.Push.Dialog.v2" timestamp="1625425335122">
+    <state x="534" y="248" key="VCS.ChangeListViewerDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626377281391" />
+    <state x="789" y="461" key="VCS.ChangelistChooser" timestamp="1626530965953">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="789" y="461" key="VCS.ChangelistChooser/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626530965952" />
+    <state x="789" y="461" key="VCS.ChangelistChooser/75.0.1845.1080@75.0.1845.1080" timestamp="1626387129513" />
+    <state x="589" y="277" key="Vcs.Push.Dialog.v2" timestamp="1630330718687">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="-1331" y="184" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@-1845.-93.1845.1080" timestamp="1625389796127" />
-    <state x="589" y="277" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1625336106437" />
-    <state x="668" y="344" key="git4idea.merge.GitPullDialog" timestamp="1624836839318">
+    <state x="589" y="277" key="Vcs.Push.Dialog.v2/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1630330718687" />
+    <state x="589" y="277" key="Vcs.Push.Dialog.v2/75.0.1845.1080@75.0.1845.1080" timestamp="1626387204927" />
+    <state x="167" y="92" width="1661" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1626378449975">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
-    <state x="668" y="344" key="git4idea.merge.GitPullDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624836839318" />
+    <state x="167" y="92" width="1661" height="896" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626378449975" />
+    <state x="688" y="301" width="616" height="488" key="find.popup" timestamp="1630366280487">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="688" y="301" width="616" height="488" key="find.popup/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1630366280487" />
+    <state x="795" y="344" key="git4idea.merge.GitMergeDialog" timestamp="1626377238602">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="795" y="344" key="git4idea.merge.GitMergeDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626377238602" />
+    <state x="668" y="344" key="git4idea.merge.GitPullDialog" timestamp="1630330712187">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="668" y="344" key="git4idea.merge.GitPullDialog/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1630330712187" />
+    <state x="668" y="344" key="git4idea.merge.GitPullDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626376004532" />
+    <state x="802" y="420" key="git4idea.rebase.GitRebaseDialog" timestamp="1626377309985">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="802" y="420" key="git4idea.rebase.GitRebaseDialog/75.0.1845.1080@75.0.1845.1080" timestamp="1626377309985" />
     <state x="344" y="87" width="1002" height="852" key="new project wizard" timestamp="1625421951346">
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
@@ -377,5 +573,275 @@
       <screen x="75" y="0" width="1845" height="1080" />
     </state>
     <state x="660" y="235" width="672" height="678" key="search.everywhere.popup/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1624487062869" />
+    <state x="582" y="300" key="spring file set editor" timestamp="1626002439625">
+      <screen x="75" y="0" width="1845" height="1080" />
+    </state>
+    <state x="582" y="300" key="spring file set editor/-1845.-93.1845.1080/75.0.1845.1080@75.0.1845.1080" timestamp="1626002439625" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.5.0/spring-security-core-5.5.0-sources.jar!/org/springframework/security/crypto/password/DelegatingPasswordEncoder.java</url>
+          <line>252</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.5.0/spring-security-core-5.5.0-sources.jar!/org/springframework/security/crypto/password/NoOpPasswordEncoder.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/AuthenticationEntryPointFailureHandler.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationFailureHandler.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationFailureHandler.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationFailureHandler.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>237</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>242</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>266</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>374</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExceptionHandlingConfigurer.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/HttpBasicConfigurer.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/oauth2/client/OAuth2LoginConfigurer.java</url>
+          <line>307</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/oauth2/client/OAuth2LoginConfigurer.java</url>
+          <line>498</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/service/CustomerUserDetailsService.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationEntryPoint.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/JwtAuthenticationTokenFilter.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/JwtAuthenticationTokenFilter.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxAuthenticationSuccessHandler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.4.1.RELEASE/spring-security-oauth2-2.4.1.RELEASE-sources.jar!/org/springframework/security/oauth2/provider/authentication/OAuth2AuthenticationManager.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/LoginUrlAuthenticationEntryPoint.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>221</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>317</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/AuthenticationFilter.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.5.0/spring-security-core-5.5.0-sources.jar!/org/springframework/security/authentication/DefaultAuthenticationEventPublisher.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.4.1.RELEASE/spring-security-oauth2-2.4.1.RELEASE-sources.jar!/org/springframework/security/oauth2/client/filter/OAuth2ClientAuthenticationProcessingFilter.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.4.1.RELEASE/spring-security-oauth2-2.4.1.RELEASE-sources.jar!/org/springframework/security/oauth2/client/filter/OAuth2ClientAuthenticationProcessingFilter.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractAuthenticationFilterConfigurer.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxAuthenticationFailureHandler.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxAccessDeniedHandler.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.5.0/spring-security-core-5.5.0-sources.jar!/org/springframework/security/authentication/DefaultAuthenticationEventPublisher.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationFailureHandler.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/SavedRequestAwareAuthenticationSuccessHandler.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/service/RbacAuthorityService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/AbstractConfigAttributeRequestMatcherRegistry.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.5.0/spring-security-config-5.5.0-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>186</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/service/RbacAuthorityService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-demo-5/src/main/java/cn/coffeeandice/config/auth/AjaxLogoutSuccessHandler.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/logout/DelegatingLogoutSuccessHandler.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/logout/DelegatingLogoutSuccessHandler.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/logout/LogoutFilter.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/logout/CompositeLogoutHandler.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/util/matcher/RequestHeaderRequestMatcher.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.5.0/spring-security-web-5.5.0-sources.jar!/org/springframework/security/web/authentication/DelegatingAuthenticationEntryPoint.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
